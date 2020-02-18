@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    font-family: 'Sulphur Point', sans-serif;
+    font-weight: normal;
+    color: #707070;
+}
+
+body {
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+.logo span {
+    font-family: 'Sulphur Point', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    border: 1px solid #707070;
+    padding: 2px 4px;
+    margin-left: 7px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*---- Header (Nav section) ----*/
+
+header {
+    border-bottom: 2px solid #707070;
+    padding: 10px 0 10px 0;
+}
+
+.navlinks {
+    float: right;
+    line-height: 40px;
+}
+
+.home {
+    margin-right: 50px;
+}
+
+.css {
+    margin-right: 100px;
+}
+
+.home:hover {
+    color: black;
+}
+
+.css:hover {
+    color: black;
+}
+
+/*---- Title Section ----*/
+
+.title {
+    margin: 90px auto 90px auto;
+    text-align: center;
+}
+
+.heading {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 70px;
+}
+
+.subheading {
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 25px;
+    border: 1px solid #707070;
+    padding: 2px 4px;
+    display: inline-block;
+}
+
+/*---- Section links Section ----*/
+
+.sections {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.secnav-left {
+    width: 200px;
+    float: left;
+    padding: 20px 0 90px 280px;
+    line-height: 50px;
+}
+
+.secnav-center {
+    width: 170px;
+    padding: 20px 0 90px 0;
+    line-height: 50px;
+    text-align: center;
+}
+
+.secnav-right {
+    width: 200px;
+    float: right;
+    padding: 20px 280px 90px 0;
+    line-height: 50px;
+    text-align: right;
+}
+
+.container a:hover {
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+/*---- Table Global Styles ----*/
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    margin: auto;
+    width: 80%;
+}
+
+th {
+    background-color: #707070;
+    color: white;
+    padding: 20px 0 20px 0;
+    font-size: 25px;
+}
+
+td {
+    border: 2px solid #707070;
+    padding: 20px 15px 20px 15px;
+}
+
+.tag, .name {
+    border-right: 2px solid white;
+}
+
+/*---- Main Root Table (This style is seperate from the other headings as its margins are different) ----*/
+
+.heading-backgrounds {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*---- Section headings styling ----*/
+
+.section-headings {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 90px 0 20px 0;
+}
+
+/*---- Attributes table styling (This is to seperate the table from the footer) ----*/
+
+.attributes {
+    margin-bottom: 90px;
+}
+
+/*---- Footer Section ----*/
+
+footer {
+    background-color: #707070;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.end {
+    padding-left: 100px;
+}

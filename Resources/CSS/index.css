@@ -1,0 +1,86 @@
+/*---- Global Styling ----*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    font-family: 'Sulphur Point', sans-serif;
+    font-weight: normal;
+    color: #707070;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.logo {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+.logo span {
+    font-family: 'Sulphur Point', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    border: 1px solid #707070;
+    padding: 2px 4px;
+    margin-left: 7px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*---- Header (Nav section) ----*/
+
+header {
+    border-bottom: 2px solid #707070;
+    padding: 10px 0 10px 0;
+}
+
+/*---- Main Section ----*/
+
+main {
+    text-align: center;
+    padding: 150px 0 150px 0;
+}
+
+a {
+    display: block;
+    margin: 50px auto;
+    border: 2px solid #707070;
+    border-radius: 1000px;
+    font-size: 60px;
+    width: 550px;
+    height: 80px;
+    line-height: 80px;
+}
+
+a:hover {
+    background-color: #707070;
+    color: white;
+    transition: 0.3s;
+}
+
+/*---- Footer Section ----*/
+
+footer {
+    background-color: #707070;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+p {
+    padding-left: 100px;
+}

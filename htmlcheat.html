@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Dev Cheat Sheet</title>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, inital-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Sulphur+Point|Varela+Round&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./Resources/CSS/htmlcheat.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="./index.html" class="logo">WEB DEVELOPMENT <span class="cheat-sheet">cheat sheet</span></a>
+            <a href="./csscheat.html" class="navlinks css">CSS</a>
+            <a href="./index.html" class="navlinks home">HOME</a>
+        </nav>
+    </header>
+    <main>
+        <div class="title">
+            <h1 class="heading">&lt;html&gt;</h1>
+            <p class="subheading">cheat sheet</p>
+        </div>
+
+        <h2 class="sections">Sections</h2>
+
+        <div class="container">
+            <div class="secnav-left">
+                <ul>
+                    <li><a href="#main-root">Main Root</a></li>
+                    <li><a href="#document-metadata">Document Metadata</a></li>
+                    <li><a href="#sec-root">Sectioning Root</a></li>
+                    <li><a href="#content-sec">Content Sectioning</a></li>
+                </ul>
+            </div>
+            <div class="secnav-center">
+                <ul>
+                    <li><a href="#text-cont">Text Content</a></li>
+                    <li><a href="#inline">Inline Text Semantics</a></li>
+                    <li><a href="#imgmult">Image and Multimedia</a></li>
+                    <li><a href="#scripting">Scripting</a></li>
+                </ul>
+            </div>
+            <div class="secnav-right">
+                <ul>
+                    <li><a href="#tablecont">Table Content</a></li>
+                    <li><a href="#forms">Forms</a></li>
+                    <li><a href="#interactive">Interactive Elements</a></li>
+                    <li><a href="#attributes">Attributes</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section id="main-root">
+            <h1 class="heading-mainroot">Main Root</h1>
+            <table class="table-mainroot">
+                <thead>
+                    <tr>
+                        <th class="tag">Tag</th>
+                        <th class="name">Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="left">&lt;html&gt;...&lt;/html&gt;</td>
+                        <td>HTML</td>
+                        <td>Represents the root (top-level element) of an HTML document, so it is also referred to as the root element. All other elements must be descendants of this element.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="document-metadata">
+            <h1 class="section-headings">Document Metadata</h1>
+            <table class="table-docmeta">
+                <thead>
+                    <tr>
+                        <th class="tag">Tag</th>
+                        <th class="name">Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="left">&lt;head&gt;...&lt;/head&gt;</td>
+                        <td>Head</td>
+                        <td>Contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;link&gt;...&lt;/link&gt;</td>
+                        <td>External Resource Link</td>
+                        <td>Specifies relationships between the current document and an external resource.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;meta&gt;</td>
+                        <td>MetaData</td>
+                        <td>Represents metadata that cannot be represented by other HTML meta-related elements, like &lt;base&gt;, &lt;link&gt;, &lt;script&gt;, &lt;style&gt; or &lt;title&gt;</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;style&gt;...&lt;/style&gt;</td>
+                        <td>Style</td>
+                        <td>Contains style information for a document, or part of a document.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;title&gt;...&lt;/title&gt;</td>
+                        <td>Title</td>
+                        <td>Defines the document’s title that is shown in a browser’s title bar or a page’s tab.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="sec-root">
+            <h1 class="section-headings">Sectioning Root</h1>
+            <table class="sec-root">
+                <thead>
+                    <tr>
+                        <th class="tag">Tag</th>
+                        <th class="name">Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="left">&lt;body&gt;...&lt;/body&gt;</td>
+                        <td>Body</td>
+                        <td>Represents the content of an HTML document. There can be only one &lt;body&gt; element in a document.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="content-sec">
+            <h1 class="section-headings">Content Sectioning</h1>
+            <table class="table-docmeta">
+                <thead>
+                    <tr>
+                        <th class="tag">Tag</th>
+                        <th class="name">Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="left">&lt;header&gt;...&lt;/header&gt;</td>
+                        <td>Header</td>
+                        <td>Represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;nav&gt;...&lt;/nav&gt;</td>
+                        <td>Navigation</td>
+                        <td>Represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;main&gt;...&lt;/main&gt;</td>
+                        <td>Main</td>
+                        <td>Represents the dominant content of the &lt;body&gt; of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;div&gt;...&lt;/div&gt;</td>
+                        <td>Division</td>
+                        <td>A generic container for flow content. It has no effect on the content or layout until styled using CSS.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;section&gt;...&lt;/section&gt;</td>
+                        <td>Section</td>
+                        <td>Represents a standalone section — which doesn't have a more specific semantic element to represent it — contained within an HTML document.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;article&gt;...&lt;/article&gt;</td>
+                        <td>Article</td>
+                        <td>Represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;aside&gt;...&lt;/aside&gt;</td>
+                        <td>Aside</td>
+                        <td>A portion of a document whose content is only indirectly related to the document's main content.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;address&gt;...&lt;/address&gt;</td>
+                        <td>Address</td>
+                        <td>Indicates that the enclosed HTML provides contact information for a person or people, or for an organization.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;footer&gt;...&lt;/footer&gt;</td>
+                        <td>Footer</td>
+                        <td>Represents a footer for its nearest sectioning content or sectioning root element. A footer typically contains information about the author of the section, copyright data or links to related documents.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="text-cont">
+            <h1 class="section-headings">Text Content</h1>
+            <table class="text-content">
+                <thead>
+                    <tr>
+                        <th class="tag">Tag</th>
+                        <th class="name">Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="left">&lt;h1&gt;-&lt;h6&gt;...&lt;/h6&gt;</td>
+                        <td>Headings</td>
+                        <td>represent six levels of section headings. &lt;h1&gt; is the highest section level and &lt;h6&gt; is the lowest.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;p&gt;...&lt;/p&gt;</td>
+                        <td>Paragraph</td>
+                        <td>Represents a paragraph.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;ol&gt;...&lt;/ol&gt;</td>
+                        <td>Ordered List</td>
+                        <td>An ordered list of items, typically rendered as a numbered list.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;ul&gt;...&lt;/ul&gt;</td>
+                        <td>Un-ordered List</td>
+                        <td>An unordered list of items, typically rendered as a bulleted list.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;li&gt;...&lt;/li&gt;</td>
+                        <td>List Item</td>
+                        <td>Used to represent an item in a list.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;figure&gt;...&lt;/figure&gt;</td>
+                        <td>Figure</td>
+                        <td>Represents self-contained content, potentially with an optional caption.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;figcaption&gt;...&lt;/figcaption&gt;</td>
+                        <td>Figure Caption</td>
+                        <td>Represents a caption or legend describing the rest of the contents of its parent</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;blockquote&gt;...&lt;/blockquote&gt;</td>
+                        <td>Block Quotation</td>
+                        <td>Indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation. A URL for the source of the quotation may be given.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;hr&gt;</td>
+                        <td>Horizontal Rule</td>
+                        <td>Represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;pre&gt;...&lt;/pre&gt;</td>
+                        <td>Preformatted Text</td>
+                        <td>Represents preformatted text which is to be presented exactly as written in the HTML file.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="inline">
+            <h1 class="section-headings">Inline Text Semantics</h1>
+            <table class="inline-text">
+                <thead>
+                    <tr>
+                        <th class="tag">Tag</th>
+                        <th class="name">Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="left">&lt;a&gt;...&lt;/a&gt;</td>
+                        <td>Anchor</td>
+                        <td>Creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;span&gt;...&lt;/span&gt;</td>
+                        <td>Span</td>
+                        <td>A generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;br&gt;</td>
+                        <td>Break</td>
+                        <td>Produces a line break in text (carriage-return).</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;em&gt;...&lt;/em&gt;</td>
+                        <td>Emphasis</td>
+                        <td>Marks text that has stress emphasis. It can be nested, with each level of nesting indicating a greater degree of emphasis.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;small&gt;...&lt;/small&gt;</td>
+                        <td>Small</td>
+                        <td>Represents side-comments and small print, like copyright and legal text, independent of its styled presentation. By default, it renders text within it one font-size small, such as from small to x-small.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;strong&gt;...&lt;/strong&gt;</td>
+                        <td>Strong Importance</td>
+                        <td>Indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;mark&gt;...&lt;/mark&gt;</td>
+                        <td>Mark</td>
+                        <td>Represents text which is marked or highlighted for reference or notation purposes, due to the marked passage's relevance or importance in the enclosing context.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;time&gt;...&lt;/time&gt;</td>
+                        <td>Time</td>
+                        <td>Represents a specific period in time.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;code&gt;...&lt;/code&gt;</td>
+                        <td>Code</td>
+                        <td>Displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;cite&gt;...&lt;/cite&gt;</td>
+                        <td>Citation</td>
+                        <td>Used to describe a reference to a cited creative work, and must include the title of that work.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;abbr&gt;...&lt;/abbr&gt;</td>
+                        <td>Abbreviation</td>
+                        <td>Represents an abbreviation or acronym.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="imgmult">
+            <h1 class="section-headings">Images and Multimedia</h1>
+            <table class="imgmult">
+                <thead>
+                    <tr>
+                        <th class="tag">Tag</th>
+                        <th class="name">Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="left">&lt;audio&gt;...&lt;/audio&gt;</td>
+                        <td>Audio</td>
+                        <td>Used to embed sound content in documents.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;video&gt;...&lt;/video&gt;</td>
+                        <td>Video</td>
+                        <td>Embeds a media player which supports video playback into the document.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;img&gt;</td>
+                        <td>Image</td>
+                        <td>Embeds an image into the document.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;track&gt;</td>
+                        <td>Time Tracks</td>
+                        <td>Used as a child of the media elements &lt;audio&gt; and &lt;video&gt;. It lets you specify timed text tracks (or time-based data), for example to automatically handle subtitles. The tracks are formatted in WebVTT format (.vtt files) — Web Video Text Tracks or Timed Text Markup Language (TTML).</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="scripting">
+            <h1 class="section-headings">Scripting</h1>
+            <table class="scripting">
+                <thead>
+                    <tr>
+                        <th class="tag">Tag</th>
+                        <th class="name">Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="left">&lt;script&gt;...&lt;/script&gt;</td>
+                        <td>Script</td>
+                        <td>Used to embed or reference executable code; this is typically used to embed or refer to JavaScript code.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="tablecont">
+            <h1 class="section-headings">Table Content</h1>
+            <table class="table-cont">
+                <thead>
+                    <tr>
+                        <th class="tag">Tag</th>
+                        <th class="name">Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="left">&lt;table&gt;...&lt;/table&gt;</td>
+                        <td>Table</td>
+                        <td>Represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;caption&gt;...&lt;/caption&gt;</td>
+                        <td>Caption</td>
+                        <td>specifies the caption (or title) of a table, and if used is always the first child of a &lt;table&gt;.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;thead&gt;...&lt;/thead&gt;</td>
+                        <td>Table Head</td>
+                        <td>Defines a set of rows defining the head of the columns of the table.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;tbody&gt;...&lt;/tbody&gt;</td>
+                        <td>Table Body</td>
+                        <td>Encapsulates a set of table rows, indicating that they comprise the body of the table.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;tfoot&gt;...&lt;/tfoot&gt;</td>
+                        <td>Table Foot</td>
+                        <td>Defines a set of rows summarizing the columns of the table.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;th&gt;...&lt;/th&gt;</td>
+                        <td>Table Header</td>
+                        <td>Defines a cell as header of a group of table cells.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;tr&gt;...&lt;/tr&gt;</td>
+                        <td>Table Row</td>
+                        <td>Defines a row of cells in a table.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;td&gt;...&lt;/td&gt;</td>
+                        <td>Table Data</td>
+                        <td>Defines a cell of a table that contains data.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="forms">
+            <h1 class="section-headings">Forms</h1>
+            <table class="forms">
+                <thead>
+                    <tr>
+                        <th class="tag">Tag</th>
+                        <th class="name">Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="left">&lt;form&gt;...&lt;/form&gt;</td>
+                        <td>Form</td>
+                        <td>Represents a document section that contains interactive controls for submitting information to a web server.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;input&gt;</td>
+                        <td>Input</td>
+                        <td>Used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;button&gt;...&lt;/button&gt;</td>
+                        <td>Button</td>
+                        <td>A clickable button, which can be used in forms or anywhere in a document that needs simple, standard button functionality.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;datalist&gt;...&lt;/datalist&gt;</td>
+                        <td>Data List</td>
+                        <td>contains a set of &lt;option&gt; elements that represent the values available for other controls.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;select&gt;...&lt;/select&gt;</td>
+                        <td>Selection</td>
+                        <td>Represents a control that provides a menu of options.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;optgroup&gt;...&lt;/optgroup&gt;</td>
+                        <td>Group Option</td>
+                        <td>Creates a grouping of options within a &lt;select&gt; element.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;option&gt;...&lt;/option&gt;</td>
+                        <td>Option</td>
+                        <td>Can represent menu items in popups and other lists of items in an HTML document.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;textarea&gt;...&lt;/textarea&gt;</td>
+                        <td>Text Area</td>
+                        <td>Represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;progress&gt;...&lt;/progress&gt;</td>
+                        <td>Progress</td>
+                        <td>Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;fieldset&gt;...&lt;/fieldset&gt;</td>
+                        <td>Field Set</td>
+                        <td>Used to group several controls as well as labels within a web form.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;label&gt;...&lt;/label&gt;</td>
+                        <td>Label</td>
+                        <td>Represents a caption for an item in a user interface.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;legend&gt;...&lt;/legend&gt;</td>
+                        <td>Legend</td>
+                        <td>Represents a caption for the content of its parent &lt;fieldset&gt;.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="interactive">
+            <h1 class="section-headings">Interactive Elements</h1>
+            <table class="interactive">
+                <thead>
+                    <tr>
+                        <th class="tag">Tag</th>
+                        <th class="name">Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="left">&lt;details&gt;...&lt;/details&gt;</td>
+                        <td>Details</td>
+                        <td>Creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;summary&gt;...&lt;/summary&gt;</td>
+                        <td>Summary</td>
+                        <td>Specifies a summary, caption, or legend for a &lt;details&gt; element's disclosure box.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="attributes">
+            <h1 class="section-headings">Attributes</h1>
+            <table class="attributes">
+                <thead>
+                    <tr>
+                        <th class="tag">Name</th>
+                        <th class="name">Value</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="left">&lt;details&gt;...&lt;/details&gt;</td>
+                        <td>Details</td>
+                        <td>Creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state.</td>
+                    </tr>
+                    <tr>
+                        <td class="left">&lt;summary&gt;...&lt;/summary&gt;</td>
+                        <td>Summary</td>
+                        <td>Specifies a summary, caption, or legend for a &lt;details&gt; element's disclosure box.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+    <footer>
+        <p class="end">Designed and Developed by: Kevin Simon</p>
+    </footer>
+</body>
